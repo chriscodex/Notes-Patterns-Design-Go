@@ -6,3 +6,6 @@ type iProduct interface {
 	setName(name string)
 	getName() string
 }
+
+type computer struct {
+}
