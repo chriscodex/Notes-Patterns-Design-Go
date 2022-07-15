@@ -8,4 +8,5 @@ type iProduct interface {
 }
 
 type computer struct {
+	name string
 }
