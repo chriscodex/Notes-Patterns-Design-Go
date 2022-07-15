@@ -11,3 +11,7 @@ type computer struct {
 	name  string
 	stock int
 }
+
+func (c computer) setStock(stock int) {
+
+}
