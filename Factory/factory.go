@@ -27,3 +27,7 @@ func (c computer) getStock() int {
 func (c computer) getName() string {
 	return c.name
 }
+
+type laptop struct {
+	computer
+}
