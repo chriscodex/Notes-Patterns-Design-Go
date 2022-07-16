@@ -31,3 +31,12 @@ func (c computer) getName() string {
 type laptop struct {
 	computer
 }
+
+func newLaptop() iProduct {
+	return &laptop{
+		computer: computer{
+			name:  "Laptop Computer",
+			stock: 25,
+		},
+	}
+}
