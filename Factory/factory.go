@@ -13,5 +13,5 @@ type computer struct {
 }
 
 func (c computer) setStock(stock int) {
-
+	c.stock = stock
 }
