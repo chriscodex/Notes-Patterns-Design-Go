@@ -23,3 +23,7 @@ func (c computer) setName(name string) {
 func (c computer) getStock() int {
 	return c.stock
 }
+
+func (c computer) getName() string {
+
+}
