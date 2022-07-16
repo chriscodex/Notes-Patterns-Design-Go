@@ -17,5 +17,5 @@ func (c computer) setStock(stock int) {
 }
 
 func (c computer) setName(name string) {
-
+	c.name = name
 }
