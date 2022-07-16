@@ -15,3 +15,7 @@ type computer struct {
 func (c computer) setStock(stock int) {
 	c.stock = stock
 }
+
+func (c computer) setName(name string) {
+
+}
