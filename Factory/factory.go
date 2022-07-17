@@ -46,3 +46,12 @@ func newLaptop() iProduct {
 type desktop struct {
 	computer
 }
+
+func newDesktop() iProduct {
+	return &desktop{
+		computer: computer{
+			name:  "Desktop Computer",
+			stock: 35,
+		},
+	}
+}
