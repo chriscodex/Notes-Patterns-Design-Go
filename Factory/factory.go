@@ -70,3 +70,7 @@ func getComputerFactory(computerType string) (iProduct, error) {
 		return nil, fmt.Errorf("Invalid computer type")
 	}
 }
+
+func printNameAndStock(p iProduct) {
+
+}
