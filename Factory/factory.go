@@ -43,3 +43,6 @@ func newLaptop() iProduct {
 }
 
 // Desktop
+type desktop struct {
+	computer
+}
