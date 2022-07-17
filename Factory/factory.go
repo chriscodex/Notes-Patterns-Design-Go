@@ -74,3 +74,7 @@ func getComputerFactory(computerType string) (iProduct, error) {
 func printNameAndStock(p iProduct) {
 	fmt.Printf("Product Name:%s, with stock:%d\n", p.getName(), p.getStock())
 }
+
+func main() {
+
+}
