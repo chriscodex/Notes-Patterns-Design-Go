@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type iProduct interface {
 	setStock(stock int)
 	getStock() int
@@ -59,5 +61,12 @@ func newDesktop() iProduct {
 
 // Factory
 func getComputerFactory(computerType string) (iProduct, error) {
-
+	switch computerType {
+	case "laptop":
+		return newLaptop(), nil
+	case "desktop":
+		return newDesktop(), nil
+	default:
+		return nil, fmt.Errorf("Invalid computer type")
+	}
 }
