@@ -7,6 +7,7 @@ type iProduct interface {
 	getName() string
 }
 
+// Computer
 type computer struct {
 	name  string
 	stock int
@@ -54,4 +55,9 @@ func newDesktop() iProduct {
 			stock: 35,
 		},
 	}
+}
+
+// Factory
+func getComputerFactory(computerType string) (iProduct, error) {
+
 }
