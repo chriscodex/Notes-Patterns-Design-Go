@@ -28,6 +28,7 @@ func (c computer) getName() string {
 	return c.name
 }
 
+// Laptop
 type laptop struct {
 	computer
 }
@@ -40,3 +41,5 @@ func newLaptop() iProduct {
 		},
 	}
 }
+
+// Desktop
