@@ -19,6 +19,8 @@ var db *database
 var mutex sync.Mutex
 
 func getDataBaseInstance() *database {
+	mutex.Lock()
+	defer mutex.Unlock()
 	if db == nil {
 		fmt.Println("Creating DB Connection")
 		db = &database{}
