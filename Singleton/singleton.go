@@ -5,6 +5,10 @@ import "fmt"
 type database struct {
 }
 
+func (database) createSingleConnection() {
+
+}
+
 var db *database
 
 func getDataBaseInstance() *database {
