@@ -16,6 +16,7 @@ func (database) createSingleConnection() {
 }
 
 var db *database
+var mutex sync.Mutex
 
 func getDataBaseInstance() *database {
 	if db == nil {
