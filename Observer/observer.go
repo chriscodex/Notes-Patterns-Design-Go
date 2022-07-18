@@ -9,3 +9,9 @@ type observer interface {
 	getId() string
 	updateValue(string)
 }
+
+type item struct {
+	observers []observer
+	name      string
+	available bool
+}
