@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sync"
 	"time"
 )
 
@@ -25,4 +26,12 @@ func getDataBaseInstance() *database {
 		fmt.Println("DB already created")
 	}
 	return db
+}
+
+func main() {
+	var wg sync.WaitGroup
+	for i := 0; i < 10; i++ {
+		wg.Add(1)
+
+	}
 }
