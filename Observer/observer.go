@@ -39,3 +39,8 @@ func (i *item) broadcast() {
 		observer.updateValue(i.name)
 	}
 }
+
+// Observer
+type emailClient struct {
+	id string
+}
