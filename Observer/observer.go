@@ -30,6 +30,10 @@ func (i *item) updateAvailable() {
 	i.broadcast()
 }
 
+func (i *item) register(observer observer) {
+	i.observers = append(i.observers, observer)
+}
+
 func (i *item) broadcast() {
 	for _, observer := range i.observers {
 		observer.updateValue(i.name)
