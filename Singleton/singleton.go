@@ -21,5 +21,8 @@ func getDataBaseInstance() *database {
 		fmt.Println("Creating DB Connection")
 		db = &database{}
 		db.createSingleConnection()
+	} else {
+		fmt.Println("DB already created")
 	}
+
 }
