@@ -24,5 +24,5 @@ func getDataBaseInstance() *database {
 	} else {
 		fmt.Println("DB already created")
 	}
-
+	return db
 }
