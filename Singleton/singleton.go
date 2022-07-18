@@ -1,12 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 type database struct {
 }
 
 func (database) createSingleConnection() {
-
+	fmt.Println("Creating singleton for Database")
+	time.Sleep(2 * time.Second)
+	fmt.Println("Creating done")
 }
 
 var db *database
