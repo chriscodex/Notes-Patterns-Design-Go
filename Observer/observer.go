@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type topic interface {
 	register(observer)
 	broadcast()
@@ -20,4 +22,10 @@ func newItem(name string) *item {
 	return &item{
 		name: name,
 	}
+}
+
+func (i *item) updateAvailable() {
+	fmt.Printf("Item %s is available\n", i.name)
+	i.available = true
+	i.broadcast()
 }
