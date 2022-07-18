@@ -6,5 +6,7 @@ type database struct {
 var db *database
 
 func getDataBaseInstance() *database {
+	if db == nil {
 
+	}
 }
