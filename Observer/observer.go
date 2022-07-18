@@ -15,3 +15,9 @@ type item struct {
 	name      string
 	available bool
 }
+
+func newItem(name string) *item {
+	return &item{
+		name: name,
+	}
+}
