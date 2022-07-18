@@ -12,7 +12,7 @@ type database struct {
 func (database) createSingleConnection() {
 	fmt.Println("Creating singleton for Database")
 	time.Sleep(2 * time.Second)
-	fmt.Println("Creating done")
+	fmt.Println("Database created")
 }
 
 var db *database
