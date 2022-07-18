@@ -29,3 +29,9 @@ func (i *item) updateAvailable() {
 	i.available = true
 	i.broadcast()
 }
+
+func (i *item) broadcast() {
+	for _, observer := range i.observers {
+		observer.updateValue(i.name)
+	}
+}
