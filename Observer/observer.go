@@ -44,3 +44,7 @@ func (i *item) broadcast() {
 type emailClient struct {
 	id string
 }
+
+func (eC *emailClient) getId() string {
+	return eC.id
+}
