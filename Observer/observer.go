@@ -48,3 +48,7 @@ type emailClient struct {
 func (eC *emailClient) getId() string {
 	return eC.id
 }
+
+func (eC *emailClient) updateValue(value string) {
+	fmt.Printf("Sending email -%s available for client %s\n", value, eC.id)
+}
