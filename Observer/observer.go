@@ -52,3 +52,16 @@ func (eC *emailClient) getId() string {
 func (eC *emailClient) updateValue(value string) {
 	fmt.Printf("Sending email -%s available for client %s\n", value, eC.id)
 }
+
+func main() {
+	nvidiaItem := newItem("RTX 3080")
+	firstObserver := &emailClient{
+		id: "12ab",
+	}
+	secondObserver := &emailClient{
+		id: "34dc",
+	}
+	nvidiaItem.register(firstObserver)
+	nvidiaItem.register(secondObserver)
+	nvidiaItem.updateAvailable()
+}
