@@ -39,3 +39,13 @@ type md5 struct{}
 func (md5) hash(p *passwordProtector) {
 	fmt.Printf("Hashing using MD5 for %s\n", p.passwordName)
 }
+
+func main() {
+	sha := &sha{}
+	md5 := &md5{}
+
+	passwordProtector := newPasswordProtector("Christian", "Steam passwords", sha)
+	passwordProtector.hash()
+	passwordProtector.setHashAlgorith(md5)
+	passwordProtector.hash()
+}
