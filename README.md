@@ -1,1 +1,1 @@
-# Patterns-Design-Go
+# Notes-Patterns-Design-Go
